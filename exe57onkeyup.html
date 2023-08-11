@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+   <head>
+ 
+    <script>
+        function ranjith(){
+            let x = document.getElementById("aemo");
+            x.value = x.value.toUpperCase(); 
+        
+            let y = document.getElementById("bemo");
+            y.value = y.value.toUpperCase(); 
+        
+            let z = document.getElementById("cemo");
+            z.value = z.value.toUpperCase(); 
+        
+            let a = document.getElementById("demo");
+            a.value = a.value.toUpperCase(); 
+        
+        }
+        </script>
+
+   </head>
+
+    
+    
+    <body>
+        <h1>Html onkeyup event</h1>
+        <label>Enter your name</label>
+        <input type="text" id="aemo" onkeyup="ranjith()"> 
+        <br><br>
+
+        <label>middle name</label>
+        <input type="text" id="bemo"  onkeyup="ranjith()"> 
+        <br><br>
+
+        <label>Last name</label>
+        <input type="text" id="cemo"  onkeyup="ranjith()"> 
+        <br><br>
+
+        <label>address</label>
+        <input type="text" id="demo" onkeyup="ranjith()"> 
+
+       
+    </body>
+</html>

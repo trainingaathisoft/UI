@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+      const names = [
+        { id: 5, firstname: "ranjith", lastname: "rajendran" },
+        { id: 6, firstname: "Raj", lastname: "kumar" },
+        { id: 7, firstname: "Mugesh", lastname: "kumar" },
+        { id: 8, firstname: "Naveen", lastname: "saravanan" },
+      ];
+
+      let name = names.map((namam) => {
+        let fullName = [namam.firstname, namam.lastname].join(" ");
+        // let obj={id:namam.id,fullName}
+        //return obj
+        return fullName;
+      });
+
+      console.log(name);
+    </script>
+
+    <script>
+      const products = [
+        { id: 3, title: "headphone", cost: 2400 },
+        { id: 1, title: "androidphone", cost: 7500 },
+        { id: 2, title: "gaming computer", cost: 90500 },
+      ];
+
+      let costsmallerthan8000   = products.filter(function (value) {
+        return value.cost < 8000;
+      });
+      console.log(costsmallerthan8000 )
+
+      let titlearrangedinascendingorder = products.sort((a, b) => 
+        a.title.localeCompare(b.title))
+     
+        console.log( titlearrangedinascendingorder)
+
+
+ let sortdonefromlowestcost=products.sort((a,b)=>{
+  b.cost-(a.cost)})
+
+    console.log(sortdonefromlowestcost)
+
+     let final=products.map((vol)=>{
+
+    return vol.title+" $"+vol.cost;
+
+     })
+
+console.log(final)
+    </script>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+ const numbers=[45,95,48,98];
+ let num=numbers.reduce(function(previousvalue,currentvalue){
+    console.log("previousvalue",previousvalue)
+    console.log("currentvalue",currentvalue)
+    return previousvalue * currentvalue
+ })
+ console.log(num)
+            
+        </script>
+
+<script>
+const array=[100,200,300,400];
+let ray= array.every((value,index,array)=>{
+    return value>=80
+    console.log("value",value)
+    console.log("index",index)
+    console.log("array",array)
+})
+console.log(ray)
+ const event=[70,60,50,40,200];
+ let yellow=event.every((value,index,array)=>{
+    return value >=80
+    console.log("value",value)
+    console.log("index",index)
+    console.log("array",array)
+ })
+ console.log(yellow)
+
+ const colour=[100,200,300,400];
+ let green =colour.some((value,index,array)=>{
+    return value >=300
+    console.log("value",value)
+    console.log("index",index)
+    console.log("array",array)
+ })
+ console.log(green)
+
+ const place =[100,200,300,400];
+ let white =place.some((value,index,array)=>{
+    return value >=500
+    console.log("value",value)
+    console.log("index",index)
+    console.log("array",array)
+
+ })
+ console.log(white)
+
+</script>
+
+    </body>
+</html>

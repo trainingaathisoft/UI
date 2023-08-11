@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <script>
+    const names = [
+      {
+        id: 1,
+        first_name: "Anbu",
+        last_name: "selvan",
+      },
+      { id: 2, first_name: "senthil", last_name: "kumar" },
+      { id: 3, first_name: "kalai", last_name: "selvan" },
+    ];
+    let final = names.map((vol) => {
+      let fullName = [vol.first_name, vol.last_name].join(" ");
+      //let obj={id:vol.id,fullName}
+      //return obj
+      return fullName
+    });
+  
+    console.log(final)
+  </script>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        div{
+            width:200px;
+            height:200px;
+            border: 2px solid green;
+        }
+    </style>
+
+</head>
+
+
+<body onresize="ranjith()">
+<h1>onresize event</h1>
+<p>plaese inspect for the output</p>
+    <script>
+        function ranjith(){
+         let w=outerWidth;
+            h=outerHeight;
+            text="windowsize:width="+w+",height="+h+"+rectangle="+100;
+               document.getElementById("demo").innerHTML=text;
+        }
+                 </script>
+
+    <p id="demo"></p>
+    
+    <p>This is an example of window resize event</p>
+ 
+    
+        
+
+</body>
+
+
+
+<body>
+    <h1>onmouseover event</h1>
+
+    <script>
+        function bigimg(x)
+        {
+            x.style.height="300px";
+            x.style.width="250px";
+        }
+        function normalimg(x)
+        {
+            x.style.height="100px";
+            x.style.width="200px";
+        }
+        
+     </script>
+
+<img onmouseover="bigimg(this)" onmouseout="normalimg(this)"
+src="coffee.jpg" alt="cofee" width="200px" height="50px">
+
+<body>
+   
+    <script>
+        function myFunction(e){
+      let x = e.clientX;
+      let y = e.clientY;
+      let coor = "Coordinates: (" + x + "," + y + ")";
+            document.getElementById("onmouse").innerHTML=coor
+        }
+    
+        function clearCoor(){
+            document.getElementById("onmouse").innerHTML="";
+        }
+    </script>
+
+   <p id="onmouse"></p>
+    <div onmousemove="myFunction(event)" onmouseout="clearCoor()"></div>
+    
+</body>
+
+
+     
+
+      <br><br><br>
+
+      <body> 
+
+        <body>
+            <h1>HTML DOM Events</h1>
+            <h2>The onmousedown Event</h2>
+
+            <script>
+                function mouseDown() {
+                  document.getElementById("myP").style.color = "red";
+                }
+                
+                function mouseUp() {
+                  document.getElementById("myP").style.color = "blue";
+                }
+                </script>
+                  
+          
+            <p>Click the text below</p>
+            <p id="myP" onmousedown="mouseDown()" onmouseup="mouseUp()">
+            The mouseDown() function sets the color of this text to red.
+            The mouseUp() function sets the color of this text to blue.
+            </p>
+            
+            </body>
+
+
+            <body>
+                <h1>Html Events</h1>
+                <h2>onclick events</h2>
+                <p>The onclick event is used to display the output as "hello world"</p>
+                <script>
+                    function rose(){
+                        document.getElementById("rose1").innerHTML+= "Hello world";
+                    }
+                </script>
+
+                  <button onclick="rose()">click here</button>
+                  <p id="rose1"></p>
+      
+               
+            </body>
+
+            <body>
+
+                <h1>Html Events</h1>
+                <h2>ondouble click events</h2>
+                <p>The ondouble click event is used to display the output as "hello world"</p>
+                
+        <script>
+            function apple(){
+                document.getElementById("apple1").innerHTML+= "Hello world";
+            }
+        </script>
+<button ondblclick="apple()">Double click here</button>
+    
+     <p id="apple1"></p>
+
+
+            </body>
+<p style="color: green;font-size: larger;">  The event is repeated again for practice  </p> 
+
+            <body>
+            <h1>Html events</h1>
+            <h2>ondouble click events</h2>
+
+<script>
+       function Roja(){
+        document.getElementById("Roja1").innerHTML+="Rose is red in colour";
+       }
+
+</script>
+
+<button ondblclick="Roja()">double click here</button>
+<p id="Roja1"></p>
+
+
+            </body>
+<body>
+<h1>Html events</h1>
+<h2>onclick events</h2>
+<script>
+ function Raja(){
+    document.getElementById("Raja1").innerHTML+="Hello world";
+ }
+
+</script>
+<button onclick="Raja()">click here</button>
+<p id="Raja1"></p>
+
+</body>
+
+<body>
+    <h1>Html events</h1>
+    <h2>onmousedown events</h2>
+</body>
+
+
+
+            </html>

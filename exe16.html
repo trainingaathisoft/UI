@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Html input type</title>
+    <style>
+      body {
+        background-image: url(images/paris.jpg);
+        background-attachment: fixed;
+        background-position: right top;
+        background-repeat: no-repeat;
+        background-color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Student registration form</h1>
+    <form>
+      <fieldset>
+        <legend>Find the image</legend>
+        <label>Name of image</label>
+        <input type="text" /><br /><br />
+        <label>Name of place</label>
+        <input type="text" /><br /><br />
+        <label>picture colour</label>
+        <input type="color" /><br /><br />
+        <label>picture position</label>
+        <input type="text" /><br /><br />
+        <label>date of image design</label>
+        <input type="date" /><br /><br />
+        <label>time of picture design </label>
+        <input type="time" /><br /><br />
+        <input list="name of the place" name="place" />
+
+        <select name="cars" id="cars">
+          <option value="paris"></option>
+          <option value="India"></option>
+          <option value="japan"></option>
+          <option value="china"></option>
+        </select>
+        <label>submit</label>
+        <input type="checkbox" />
+      </fieldset>
+    </form>
+  </body>
+</html>
