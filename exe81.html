@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <body>
+<script>
+     let bankaccount={
+        accountNumber:123456789,
+        balance:5000,
+
+        deposit:function(amount){
+
+            this.balance=this.balance+amount
+
+            console.log(this.balance);
+
+            return 'depositedamount$${amount} newBalanseis${this.balance}'
+            
+        },
+        withdraw:function(amt){
+            if(amt>this.balance){
+
+                return 'insufficientbalance:currentBalance:${this.balance}';
+
+                }
+                else{
+                    this.balance=this.balance-amt;
+                }
+                console.log(this.balance);
+
+                return 'withdrawnamount$${amt}newbalanceis$${this.balance}'
+
+            }
+        }
+     
+     console.log(bankaccount.deposit(1000));
+     console.log(bankaccount.withdraw(2000));
+
+</script>
+
+    </body>
+</html>

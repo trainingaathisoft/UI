@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    
+<script>
+
+let student = {
+
+    firstName: "gayathri",
+
+    secondName: "selvaraj",
+
+
+
+
+    get fullName() {
+
+       return `First Name is ${student.firstName}
+
+        Second name is ${student.secondName} `
+
+    //   return `firstname is${student.firstName}second name is${student.secondName}`
+
+
+
+
+    },
+
+    set fullName(vol){
+
+      let values= vol.slice(" ")
+
+      
+
+      console.log(values);
+
+
+
+
+
+    },
+
+
+
+
+};
+
+// student.fullName="Suresh kumar";
+
+console.log(student.fullName);
+</script>
+</html>

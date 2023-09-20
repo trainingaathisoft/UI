@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<script>
+
+let fruits = {
+firstName: "Jack",
+lastName: "fruit",
+
+get fullName() 
+{
+
+    return `First Name is ${fruits.firstName}
+
+    Second name is ${fruits.lastName} `
+
+//    return `firstname is${fruits.firstName}second name is${fruits.lastName}`
+
+},
+set fullName(vol){
+
+  let values= vol.slice(" ")
+  console.log(values);
+
+},
+
+};
+//  fruits.fullName="Straw berry";
+
+ console.log(fruits.fullName);
+</script>
+</html>
